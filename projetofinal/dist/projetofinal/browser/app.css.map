@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.css"],
+  "sourcesContent": [":host {\r\n  display: block;\r\n  min-height: 100vh;\r\n  background: radial-gradient(circle at top, rgba(248, 211, 76, 0.08), transparent 24%),\r\n    linear-gradient(180deg, #0b1f12 0%, #06120a 100%);\r\n  color: #edf7ec;\r\n}\r\n\r\n.main {\r\n  min-height: calc(100vh - 140px);\r\n  padding-top: 1.2rem;\r\n}\r\n\r\n* {\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\n"],
+  "mappings": ";AAAA;AACE,WAAS;AACT,cAAY;AACZ;AAAA,IAAY;AAAA,MAAgB,OAAO,GAAG,GAAG;AAAA,MAAE,KAAK,GAAG,EAAE,GAAG,EAAE,EAAE,EAAE,KAAK;AAAA,MAAE,YAAY,IAAI;AAAA,IACnF;AAAA,MAAgB,MAAhB;AAAA,MAAwB,QAAQ,EAAhC;AAAA,MAAoC,QAAQ;AAC9C,SAAO;AACT;AAEA,CAAC;AACC,cAAY,KAAK,MAAM,EAAE;AACzB,eAAa;AACf;AAEA;AACE,cAAY;AACd;AAEA;AACE,mBAAiB;AACnB;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/sobre/sobre.component.css"],
+  "sourcesContent": [":host {\r\n  display: block;\r\n  padding: 2rem 0;\r\n}\r\n\r\n.sobre-panel {\r\n  padding: 2.5rem;\r\n  border-radius: 32px;\r\n  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));\r\n  border: 1px solid rgba(255, 255, 255, 0.08);\r\n  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.08);\r\n}\r\n\r\n.sobre-content {\r\n  max-width: 780px;\r\n}\r\n\r\n.sobre-content h2 {\r\n  margin: 0.9rem 0 1rem;\r\n  color: #ffffff;\r\n}\r\n\r\n.sobre-content p {\r\n  margin: 0.85rem 0;\r\n  line-height: 1.75;\r\n  color: #d9ebd7;\r\n}\r\n"],
+  "mappings": ";AAAA;AACE,WAAS;AACT,WAAS,KAAK;AAChB;AAEA,CAAC;AACC,WAAS;AACT,iBAAe;AACf;AAAA,IAAY;AAAA,MAAgB,MAAhB;AAAA,MAAwB,KAAK,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE,KAA5C;AAAA,MAAmD,KAAK,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE;AACnF,UAAQ,IAAI,MAAM,KAAK,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE;AACtC,cAAY,EAAE,KAAK,KAAK,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE;AACxC;AAEA,CAAC;AACC,aAAW;AACb;AAEA,CAJC,cAIc;AACb,UAAQ,OAAO,EAAE;AACjB,SAAO;AACT;AAEA,CATC,cASc;AACb,UAAQ,QAAQ;AAChB,eAAa;AACb,SAAO;AACT;",
+  "names": []
+}

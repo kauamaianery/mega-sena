@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  padding: 2rem 0;
+}
+
+.sobre-panel {
+  padding: 2.5rem;
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-content {
+  max-width: 780px;
+}
+
+.sobre-content h2 {
+  margin: 0.9rem 0 1rem;
+  color: #ffffff;
+}
+
+.sobre-content p {
+  margin: 0.85rem 0;
+  line-height: 1.75;
+  color: #d9ebd7;
+}

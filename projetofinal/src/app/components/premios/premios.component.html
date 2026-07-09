@@ -1,0 +1,28 @@
+<div class="premios-card">
+  <div class="premios-card-header">
+    <div>
+      <span class="section-label">Carrossel automático</span>
+      <h3>{{ premioAtual.concurso | number:'1.0-0' }} - Último prêmio</h3>
+    </div>
+    <span class="pulse-label">Atualizando</span>
+  </div>
+
+  <div class="premio-panel">
+    <div class="premio-line">
+      <span>Concurso</span>
+      <strong>{{ premioAtual.concurso }}</strong>
+    </div>
+    <div class="premio-line">
+      <span>Data</span>
+      <strong>{{ premioAtual.data }}</strong>
+    </div>
+    <div class="premio-line">
+      <span>Valor pago</span>
+      <strong>{{ premioAtual.valor }}</strong>
+    </div>
+    <div class="premio-line">
+      <span>Ganhadores</span>
+      <strong>{{ premioAtual.ganhadores }} ganhador{{ premioAtual.ganhadores === 1 ? '' : 'es' }}</strong>
+    </div>
+  </div>
+</div>

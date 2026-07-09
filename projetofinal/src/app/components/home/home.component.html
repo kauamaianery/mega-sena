@@ -1,0 +1,59 @@
+<section class="hero-section" id="home">
+  <div class="hero-copy">
+    <span class="eyebrow">Mega Sorte</span>
+    <h1>Descubra sua sorte na Mega-Sena</h1>
+    <p>Gere seus números automaticamente em segundos e confira um estilo premium inspirado na Caixa.</p>
+    <div class="hero-actions">
+      <button class="button primary" (click)="sortear()">Sortear Números</button>
+      <a href="#premiacoes" class="button secondary">Ver Premiações</a>
+    </div>
+  </div>
+  <div class="hero-panel">
+    <div class="hero-panel-card">
+      <span>Pronto para jogar?</span>
+      <strong>Em poucos segundos você tem 6 números únicos.</strong>
+    </div>
+  </div>
+</section>
+
+<section class="resultado-section" id="gerar">
+  <div class="section-header">
+    <div>
+      <span class="section-label">Sorteio Rápido</span>
+      <h2>Seus números da sorte</h2>
+    </div>
+    <button class="button ghost" (click)="sortear()">Novo Sorteio</button>
+  </div>
+
+  <app-numero-sorteado
+    [numeros]="jogoAtual()?.numero || []"
+    [loading]="loading()"
+    title="Resultado da última jogada"
+  ></app-numero-sorteado>
+</section>
+
+<section class="historico-section" id="ultimos-jogos">
+  <div class="section-header">
+    <div>
+      <span class="section-label">Últimos Jogos</span>
+      <h2>Histórico recente</h2>
+    </div>
+    <a href="#ultimos-jogos" class="button secondary">Ver Todos</a>
+  </div>
+
+  <app-historico></app-historico>
+</section>
+
+<section class="premios-home-section" id="premiacoes">
+  <div class="section-header">
+    <div>
+      <span class="section-label">Últimos Prêmios</span>
+      <h2>Painel de resultados recentes</h2>
+    </div>
+    <a href="#premiacoes" class="button secondary">Explorar prêmios</a>
+  </div>
+
+  <app-premios></app-premios>
+</section>
+
+<app-sobre></app-sobre>

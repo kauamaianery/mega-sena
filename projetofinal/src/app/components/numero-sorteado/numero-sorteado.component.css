@@ -1,0 +1,79 @@
+:host {
+  display: block;
+}
+
+.numero-card {
+  padding: 2.25rem;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(8, 34, 20, 0.96), rgba(14, 56, 31, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  box-shadow: 0 26px 88px rgba(4, 28, 18, 0.26);
+}
+
+.numero-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.9rem;
+}
+
+.numero-card-header h3 {
+  margin: 0;
+  font-size: 1.45rem;
+  color: #ffffff;
+}
+
+.numero-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(auto, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.bola {
+  width: clamp(4rem, 6vw, 5.5rem);
+  height: clamp(4rem, 6vw, 5.5rem);
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: radial-gradient(circle at top left, #fff8bb 0%, #fbe18d 16%, #fff260 32%, #209869 60%, #006b3f 100%);
+  color: #0d3929;
+  font-size: 1.35rem;
+  font-weight: 800;
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.24);
+  animation: pop 0.5s ease both;
+}
+
+.empty-state {
+  color: #d4e7d6;
+  text-align: center;
+  font-size: 0.98rem;
+}
+
+.spinner {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.55rem solid rgba(255, 255, 255, 0.18);
+  border-top-color: #f8d34c;
+  animation: spin 1.1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

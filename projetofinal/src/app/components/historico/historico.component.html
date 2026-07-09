@@ -1,0 +1,27 @@
+<div class="historico-grid">
+  <ng-container *ngIf="registros.length > 0; else emptyState">
+    <article class="historico-card" *ngFor="let jogo of registros">
+      <div class="historico-head">
+        <div>
+          <span>Data</span>
+          <strong>{{ jogo.data | date:'dd/MM/yyyy' }}</strong>
+        </div>
+        <div>
+          <span>Hora</span>
+          <strong>{{ jogo.data | date:'HH:mm' }}</strong>
+        </div>
+      </div>
+      <div class="historico-numeros">
+        <span *ngFor="let numero of jogo.numero">{{ numero.toString().padStart(2, '0') }}</span>
+      </div>
+    </article>
+    <button class="button ghost wide" (click)="limparHistorico()">Limpar Histórico</button>
+  </ng-container>
+
+  <ng-template #emptyState>
+    <div class="empty-card">
+      <h3>Sem histórico por enquanto</h3>
+      <p>Gere seu primeiro jogo e ele aparecerá aqui automaticamente.</p>
+    </div>
+  </ng-template>
+</div>

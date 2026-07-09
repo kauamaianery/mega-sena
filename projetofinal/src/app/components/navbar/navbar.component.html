@@ -1,0 +1,24 @@
+<header class="navbar-shell">
+  <div class="navbar-grid">
+    <div class="brand">
+      <div class="brand-icon">M</div>
+      <div>
+        <strong>Mega Sorte</strong>
+        <span>Gerador Mega-Sena</span>
+      </div>
+    </div>
+
+    <button class="burger" type="button" aria-label="Abrir menu" aria-controls="main-navigation" [attr.aria-expanded]="menuOpen()" [class.open]="menuOpen()" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-navigation" class="nav-links" role="navigation" [class.open]="menuOpen()">
+      <a *ngFor="let item of menuItems" [href]="item.href" (click)="closeMenu()">{{ item.label }}</a>
+      <a class="button cta mobile-cta" href="#gerar" (click)="closeMenu()">Gerar Agora</a>
+    </nav>
+
+    <a class="button cta desktop-cta" href="#gerar">Gerar Agora</a>
+  </div>
+</header>

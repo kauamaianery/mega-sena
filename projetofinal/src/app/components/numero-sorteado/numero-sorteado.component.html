@@ -1,0 +1,23 @@
+<section class="numero-card">
+  <div class="numero-card-header">
+    <div>
+      <span class="section-label">Resultado</span>
+      <h3>{{ title }}</h3>
+    </div>
+    <span class="subtle">6 números sorteados</span>
+  </div>
+
+  <div class="numero-grid">
+    <ng-container *ngIf="loading; else resultBlock">
+      <div class="spinner"></div>
+      <p>Girando a roleta...</p>
+    </ng-container>
+
+    <ng-template #resultBlock>
+      <div class="bola" *ngFor="let numero of numeros" [class.animate-fade]="true">
+        {{ formatNumero(numero) }}
+      </div>
+      <p *ngIf="numeros.length === 0" class="empty-state">Clique em Sortear Números para gerar seu jogo.</p>
+    </ng-template>
+  </div>
+</section>

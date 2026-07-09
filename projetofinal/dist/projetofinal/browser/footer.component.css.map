@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/footer/footer.component.css"],
+  "sourcesContent": [":host {\r\n  display: block;\r\n}\r\n\r\n.footer-shell {\r\n  padding: 2rem 1.5rem 2.25rem;\r\n  background: rgba(4, 16, 11, 0.96);\r\n  border-top: 1px solid rgba(255, 255, 255, 0.08);\r\n}\r\n\r\n.footer-grid {\r\n  max-width: 1240px;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  gap: 1rem;\r\n  align-items: center;\r\n}\r\n\r\n.footer-grid strong {\r\n  color: #ffffff;\r\n}\r\n\r\n.footer-grid p {\r\n  margin: 0.35rem 0 0;\r\n  color: #c8d7c6;\r\n}\r\n\r\n.footer-links {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 1rem;\r\n}\r\n\r\n.footer-links a {\r\n  color: #b8cfb7;\r\n  text-decoration: none;\r\n  transition: color 0.25s ease;\r\n}\r\n\r\n.footer-links a:hover {\r\n  color: #f8d34c;\r\n}\r\n\r\n@media (max-width: 720px) {\r\n  .footer-grid {\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n  }\r\n}\r\n"],
+  "mappings": ";AAAA;AACE,WAAS;AACX;AAEA,CAAC;AACC,WAAS,KAAK,OAAO;AACrB,cAAY,KAAK,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE;AAC5B,cAAY,IAAI,MAAM,KAAK,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE;AAC5C;AAEA,CAAC;AACC,aAAW;AACX,UAAQ,EAAE;AACV,WAAS;AACT,mBAAiB;AACjB,OAAK;AACL,eAAa;AACf;AAEA,CATC,YASY;AACX,SAAO;AACT;AAEA,CAbC,YAaY;AACX,UAAQ,QAAQ,EAAE;AAClB,SAAO;AACT;AAEA,CAAC;AACC,WAAS;AACT,aAAW;AACX,OAAK;AACP;AAEA,CANC,aAMa;AACZ,SAAO;AACP,mBAAiB;AACjB,cAAY,MAAM,MAAM;AAC1B;AAEA,CAZC,aAYa,CAAC;AACb,SAAO;AACT;AAEA,QAAO,WAAY;AACjB,GAnCD;AAoCG,oBAAgB;AAChB,iBAAa;AACf;AACF;",
+  "names": []
+}
